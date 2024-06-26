@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS laravel;
+CREATE DATABASE IF NOT EXISTS properties;
+CREATE DATABASE IF NOT EXISTS user;
+-- 必要に応じて他のデータベースを追加

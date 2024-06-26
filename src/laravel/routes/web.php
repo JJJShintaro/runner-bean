@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+//test
+use App\Http\Controllers\ChatRoomController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('post/view',[ChatRoomController::class,'view']);
+
+Route::post('post',[ChatRoomController::class,'store']);
